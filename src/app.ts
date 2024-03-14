@@ -8,7 +8,7 @@ app.use('/api/auth', authRoutes);
 const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello World!');
+    return res.send('Hello World!');
 });
 
 if (process.env.NODE_ENV !== 'test') {
